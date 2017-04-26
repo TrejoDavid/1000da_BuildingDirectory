@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://electronicbuildingdirectory.com/1000da/directory/edc_weather.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" unselectable="on" style="user-select: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./1000da_files/_normalize.css">
+<link rel="stylesheet" type="text/css" href="./1000da_files/_fonts.css">
+<link rel="stylesheet" type="text/css" href="./1000da_files/_style.css">
+<link rel="stylesheet" type="text/css" href="./1000da_files/slideshow.css">
+<link rel="stylesheet" type="text/css" href="./1000da_files/simpleWeather.css">
+<link rel="stylesheet" type="text/css" href="./1000da_files/webfonts.css">
+
+
+
+	
+
+	<title>1000da</title>
+	
+	<script type="text/javascript" language="JavaScript" src="./1000da_files/jquery-1.11.3.min.js"></script>
+	<script language="JavaScript1.2" src="./1000da_files/_functions-front.js">		// including sourced functions </script>
+	
+</head>
+
+<body onmousedown="event.preventDefault();" contenteditable="no" unselectable="on" style="user-select: none;">
+  <script src="./1000da_files/jquery.cycle2.js"></script>
+  <script src="./1000da_files/jquery.cycle2.center.js"></script>
+  <script src="./1000da_files/jquery.cycle2.tile.js"></script>
+
+<div id="background" style="z-index:1;position:absolute;"><img src="./1000da_files/front.png" border="0" usemap="#Map"></div>
+<div style="z-index:0;position:absolute;"><img src="./1000da_files/front.jpg" border="0" usemap="#Map"></div>
+<!-- Initialize Slideshow ID -->
+	<!-- Initialize Slideshow ID  END-->
+
+<!-- Navigation Button Mapping -->
+<map name="Map">
+    <area shape="rect" coords="816,1617,1079,1772" href="http://electronicbuildingdirectory.com/1000da/directory/traffic.php">
+    <area shape="rect" coords="541,1617,814,1772" href="http://electronicbuildingdirectory.com/1000da/directory/vacancies_slideshow.php">
+    <area shape="rect" coords="265,1617,539,1772" href="http://electronicbuildingdirectory.com/1000da/directory/mgmtleas_wysiwyg.php">
+    <area shape="rect" coords="0,1617,263,1772" href="http://electronicbuildingdirectory.com/1000da/directory/com-list.php?start=0&amp;end=Z">
+</map>
+<!-- Navigation Button Mapping END -->
+
+<div id="slideshow-container">
+  <div id="slideshow" class="front">
+    			
+	<div class="cycle-slideshow" data-cycle-center-vert="true" data-cycle-center-horz="true" data-cycle-auto-height="1080:1314" style="position: relative; height: 1314px;">
+				
+			
+			<img src="./1000da_files/Courtyard.jpg" data-cycle-timeout="10000" class="cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; opacity: 1; display: block; visibility: visible; margin-left: 0px; margin-top: 0px;"></div>
+  </div>				
+</div>
+
+<div id="weather">
+  <div id="datage">
+    <span id="moment-day">Wed</span>, <span id="moment-month">April</span><span> </span>	<span id="moment-date">26</span> <span> </span><span id="clock"><span id="pendule">12:23<span class="ampm">PM</span></span></span>
+
+<style type="text/css">
+	#dateUTC{
+		display: none;
+	}
+</style>  <div id="dateUTC">04/26/2017</div></div>
+    <div id="weather-data"><h2><ul><li class="symbol"><img src="./1000da_files/23.PNG" height="75"></li><li><h3><span class="currently">Breezy</span></h3></li><li class="temp"><strong>54°</strong> / 48°</li></ul></h2></div>
+</div>
+
+<div id="announcements"><script>
+	var terms = new Array();
+	// start
+terms[0] = 'New modern lobby furniture soon to come this May 2017!<br><br>The building will be closed with badge access only on Monday, May 29th in observance of Memorial Day. ';
+terms[1] = 'The building will be secure on Monday, May 29th, 2017 in honor of Memorial Day.<br><br>Please visit our NEW bike locker & shower rooms on Level D at 1000 Dexter Ave. <br><br>New lobby furniture to arrive mid-May 2017. <br>';
+	//end
+
+function rotateTerm() {
+	if(terms.length == 0) {
+		$("#announcements").hide();
+	}
+  var ct = $("#announcement_text").data("term") || 0;
+  $("#announcement_text").data("term", ct == terms.length -1 ? 0 : ct + 1).html(terms[ct])
+              .fadeIn().delay(9000).fadeOut(500, rotateTerm);
+}
+$(rotateTerm); //start it on document.ready
+</script>
+<span id="announcements_header">Announcements:&nbsp;</span><span id="announcement"><span id="announcement_text" style="display: none;">No announcements at this time. Have a great day!</span></span></div> 
+
+
+
+<script>
+  var terms = new Array();
+  // start
+terms[0] = 'No announcements at this time. Have a great day!';
+  //end
+
+function rotateTerm() {
+  var ct = $("#announcements_text").data("term") || 0;
+  $("#announcements_text").data("term", ct == terms.length -1 ? 0 : ct + 1).html(terms[ct])
+              .fadeIn().delay(9000).fadeOut(500, rotateTerm);
+}
+$(rotateTerm); //start it on document.ready
+</script>
+
+
+
+<div id="Layer4" style="position: absolute; z-index: 5; width: 1060px; height: 1.063in; left: 5px; top: 1797px;">
+  
+  <div id="TickerBC77941606" class="bc_ticker" style="width:auto;overflow: hidden;border:0px solid black;height:inherit;padding-bottom:0px;border-color: #FFFFFF;">
+<table width="100%" height="100%">
+	<tbody><tr>
+    	<td valign="middle" style="color: #FFF; font-size:30px;font-family:&#39;Myriad Pro&#39;, sans-serif;font-weight:bold;width:50px;padding-right:5px;width:15px;">Headlines:</td>
+		<td valign="middle" id="TickerContentBC77941606" class="bc_tickercontent" style="height:30px;text-align:left;font-size:24px;">
+			<span id="TickerLinkBC77941606" class="bc_tickerlink"><span id="TickerTitleBC77941606" class="bc_tickertitle" style="color: rgb(255, 255, 255); font-size: 30px; font-family: &quot;Myriad Pro&quot;, sans-serif; font-weight: normal; vertical-align: middle; display: inline;"><span class="headline">Trump administration to unveil tax plan with big cuts for business</span></span></span>
+		</td>
+	</tr>
+</tbody></table>
+
+</div> 
+
+
+
+</div>
+<ul id="newsList" style="display: none;"><li><span class="headline">Fox News anchor, others hit network with race bias claims</span></li><li><span class="headline">Trump slams federal court ruling on funding for 'sanctuary cities'</span></li><li><span class="headline">Ann Coulter cancels her speech at UC Berkeley</span></li><li><span class="headline">Trump administration to unveil tax plan with big cuts for business</span></li><li><span class="headline">Exclusive: A New York hotel deal shows how some public pension funds help to enrich Trump</span></li><li><span class="headline">Giant rabbit dies on United Airlines flight to United States</span></li><li><span class="headline">Trump order aims to allow drilling at national monuments</span></li><li><span class="headline">Slimy salamander 'Snot Otter' aims to wow Bronx Zoo crowds</span></li><li><span class="headline">UBS must face ex-bond strategist's whistleblower lawsuit</span></li><li><span class="headline">Palantir settles U.S. lawsuit charging bias against Asians</span></li></ul>
+
+    <script type="text/javascript">
+          jQuery.browser = {};
+    (function () {
+
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+    </script>
+<script type="text/javascript" src="./1000da_files/jquery.jfeed.pack.js"></script>
+<script type="text/javascript" src="./1000da_files/newsTicker.js"></script>
+<script type="text/javascript" src="./1000da_files/moment.min.js"></script>
+<script type="text/javascript" src="./1000da_files/getDate.js"></script>
+<script type="text/javascript" src="./1000da_files/jquery.simpleWeather.js"></script>
+<script type="text/javascript" src="./1000da_files/getWeather.js"></script>  
+<script type="text/javascript">
+jQuery(function() {
+    jQuery.getFeed({
+        url: 'http://feedproxy.electronicbuildingdirectory.com/api/news/news_proxy.php?url=http://feeds.reuters.com/Reuters/domesticNews',
+        success: function(feed) {         
+            var html = '';           
+            for(var i = 0; i < feed.items.length && i < 10; i++) {          
+                var item = feed.items[i];      
+                html += '<li>'
+                + '<span class="headline">'
+                + item.title
+                + '</span>'
+                + '</li>';
+            }
+            jQuery('#newsList').append(html);
+                 $('#newsList').newsTicker();
+        }    
+    });
+});
+</script>
+
+
+</body></html>

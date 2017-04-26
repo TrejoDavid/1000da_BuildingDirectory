@@ -1,0 +1,580 @@
+@import url("MyriadPro.css");
+html, body { 
+	background-color:#000000;
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif; 
+	overflow:hidden;
+	
+}
+*,*:before,*:after{
+		-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.entryListing{
+	margin-bottom:20px;
+	/*background: url("../images/buttons/selectionbtn.png") center center no-repeat;*/
+	background-size: 100% 100%;
+	cursor: pointer;
+	border:solid 3px #fff;
+	background: #87940a;
+}
+.entryListing:hover{
+	background-color:rgba(100,100,100,.2);
+}
+#mapo{position:absolute;left:295px;top:244px;z-index:2; width:900px; text-align:center;}
+
+.darktext {
+	color: #FFF;
+	font-size: 100%;
+	font-weight: normal;
+} 
+.litetext { color:#999999; font-size:14pt; text-align:left;  } 
+.graytext { color:#CCCCCC; font-size:20pt; font-weight:900; } 
+.bluetext { color:#CCFFFF; font-size:14pt; text-align:left; font-weight:400; }
+
+.style1 { text-align:left; font-size: 130%; font-family: "Myriad Pro", sans-serif, Times, sans-serif; color: #fff; }
+.style2 { margin:20 20; font-family: "Myriad Pro", sans-serif, Times, sans-serif; color: #fff; font-size:120%; }
+.style4 { margin:20 20; font-family: "Myriad Pro", sans-serif, Times, sans-serif; color: #fff; }
+
+
+
+.bigtext { text-align:center; font-size: 250%; margin:30 20; font-family: "Myriad Pro", sans-serif, Times, sans-serif; color: #fff; font-weight:500; }
+
+.button {
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	color: #fff;
+	cursor: hand;
+	font-size: 1em;
+}
+
+.resultsbutton {
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	color: #fff;
+	font-weight: bold;
+	cursor: hand;
+	font-size: 22px;
+	width: 80%;
+}
+
+.button1 { font-family: "Myriad Pro", sans-serif, Times, sans-serif; color: #000; }
+
+.button2 { font-family: "Myriad Pro", sans-serif, Times, sans-serif; color: #000; cursor: hand; padding:0 0 0 0em ; margin:0 0 0em 0;border:solid red 0px;margin: 0em 0; }
+
+table.box { cursor: hand; }
+
+.title {
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	font-color: #000;
+	font-weight: 900;
+	font-size: 140%;
+	color: #000;
+}
+
+a:link img { text-decoration: none; border:0; }
+
+a:hover img { text-decoration: none; border:0; }
+
+a:active img { text-decoration: none; border:0; }
+
+a:visited img { text-decoration: none; border:0; }
+
+a:link, a:hover, a:active, a:visited {
+	font-weight: normal;
+	font-size: 26px;
+	text-decoration: none;
+	color: #fff;
+	border: 0;
+	font-family: "Myriad Pro", Times, serif;
+	cursor: hand;
+	line-height: 1.6em;
+	margin:auto 0;
+}
+#announcements{
+	position: absolute;
+	left: 8px;
+	top: 1414px;
+	color: #fff;
+	z-index: 20;
+	font-size: 30px;
+	font-family: 'Myriad Pro', sans-serif;
+	text-align: left;
+	vertical-align: top;
+	height: 177px;
+	padding: 20px;
+	border: solid red 0px;
+	width: 1061px;
+	background-color:rgba(0,0,0,.6);
+}
+#announcements_text{
+	font-size: inherit;
+	font-family:inherit;
+	color:#FFF;
+	font-weight: normal;
+}
+
+#announcements_header {
+	font-weight: bold;
+}
+
+#weather {
+	position: absolute;
+	left: 764px;
+	top: 192px;
+	height: 95px;
+	z-index: 5;
+	font-size: 30px;
+	font-family: 'Myriad Pro', sans-serif;
+	color: #fff;
+	font-weight: 500;
+	text-align: right;
+	display: all;
+	padding-right: 0px;
+	border: solid red 0px;
+	width: 300px;
+
+}
+#weather td{
+	border: solid yellow 0px;
+}
+#datage {
+    position: absolute;
+    height: 30px;
+    left: 30px;
+    top: 15px;
+    z-index: 5;
+    color: #FFF;
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 48px;
+}
+#datage2 {
+	position: absolute;
+	height: 47px;
+	left: 547px;
+	top: 35px;
+	z-index: 5;
+	color: #FFF;
+	font-family: 'Myriad Pro';
+	font-weight: bold;
+	border: solid red 0px;
+	white-space: nowrap;
+	font-size: 28px;
+}
+#search_keyboard {
+	text-align: center;
+	position: absolute;
+	top: 1040px;
+	left: 200px;
+	font-weight: bold;
+	z-index: 2;
+	width: 640px;
+	color: #fff;
+	font-size: 22px;
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	height: 291px;
+	vertical-align: middle;
+	border: solid yellow 0px;
+}
+#search_keyboard .searchTop{
+	/*
+	background: url("../images/buttons/btnwide.png") center center no-repeat;
+	background-size: 95% ;*/
+	background-color:#202F56;
+	border:solid red rgba(0,0,0,0) 3px;
+	cursor: pointer;	
+}
+#search_keyboard .searchSpace{
+	/*background: url("../images/buttons/btnwider.png") center center no-repeat;
+	background-size: auto 100%;*/
+	background-color:#202F56;
+	border:solid red rgba(0,0,0,0) 3px;
+	cursor: pointer;	
+}
+#search_keyboard table {border-collapse:separate;border-spacing:3px;}
+#search_keyboard table td table td{
+	background-color:#202F56;
+	border:solid red rgba(0,0,0,0) 3px;
+	cursor: pointer;	
+	/*background:url("../images/buttons/btn5.png") center center no-repeat;*/
+}
+#search_keyboard table td table tr{
+	/*background-color:white;*/
+	border:solid red 0px;
+	height: 33px;
+}
+
+#listdata {
+	box-sizing: border-box;
+	position: absolute;
+	top: 500px;
+	left: 130px;
+	font-weight: bold;
+	z-index: 5;
+	width: 820px;
+	font-size: 28px;
+	color: white;
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	height: 275px;
+	border: solid red 0px;
+} 
+
+#searchdata {
+	position: absolute;
+	top: 730px;
+	left: 180px;
+	font-weight: 100;
+	z-index: 5;
+	width: 709px;
+	font-size: 32px;
+	color: white;
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	height: 564px;
+	text-align: center;
+}
+
+
+#data {
+
+	position: absolute;
+	top: 290px;
+	left: 0px;
+	width: 1080px;
+	height: 1210px;
+	max-height: 1210px;
+	font-weight: 100;
+	z-index: 5;
+	font-size: 42px;
+	padding: 5px;
+	color: #FFF;
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	text-align: center;
+} 
+
+.flex.parent{
+display: -webkit-flex;
+display: flex;
+-webkit-align-items: center;
+align-items: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-align-content: center;
+align-content: flex-start;
+
+/*	flex-wrap:nowrap;
+	flex-start:center;
+	align-items:center;
+	align-content:center;
+	justify-content:center;*/
+
+}
+.flex.row{
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+}
+.flex.column{
+-webkit-flex-flow: column wrap;
+flex-flow: column wrap;
+}
+.flex.parent .child{
+	margin:0 auto;
+	/*margin:10px;*/
+}
+#data.flex.parent .child p{
+	max-width: 100%;
+	margin:auto 0;
+
+}
+#data img[class]{
+	/*height: 100%;*/	
+}
+.image img{
+	height: auto;
+}
+#data .image{
+	margin:0 auto;
+	max-height: 100%;
+	/*width:100%;*/
+	/*height:600px;*/
+}
+#com-data {
+	position: absolute;
+	top: 225px;
+	left: 370px;
+	font-weight: bold;
+	z-index: 2;
+	width: 884px;
+	color: rgba(50, 79, 182, 1);
+	font-size: 32px;
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	height: 412px;
+} 
+#ind-data {
+	position: absolute;
+	top: 225px;
+	left: 370px;
+	font-weight: bold;
+	z-index: 5;
+	width: 881px;
+	color: rgba(50, 79, 182, 1);
+	font-size: 32px;
+	font-family: "Myriad Pro", sans-serif, Times, sans-serif;
+	height: 410px;
+} 
+#logo{padding:10px;margin-top:15px;}
+
+#bldgimg { 
+position:absolute; 
+right:10px; 
+bottom:10px;  
+padding:0px; 
+margin:0px; 
+}
+
+#inddata { 
+position:absolute; 
+top:110px; 
+width:924px; 
+left:50px; 
+padding:10 0; 
+margin:10 0; 
+text-align:center;
+} 
+
+#dialit { 
+position:absolute; 
+bottom:300px; 
+width:210px; 
+left:30px; 
+}
+
+#listmgmt { 
+position:absolute; 
+width:360px; 
+top:200px; 
+left:15px; 
+padding:10 0; 
+margin:30 0; 
+} 
+
+#backhome { 
+position:absolute; 
+top:657px; 
+left:428px; 
+padding:0; 
+margin:0; z-index:2;
+}
+
+#backhome_fp {
+	position: absolute;
+	z-index: 2;
+	top: 548px;
+	left: 1083px;
+	width: 101px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+	text-align: center;
+}
+
+#backhome_lists { 
+float:left;  
+bottom:6px; 
+left:20px; 
+clear:both; 
+padding:0; 
+margin:0; 
+}
+
+#fp { 
+position:absolute; 
+left:1060px; 
+top:540px;
+padding:0; z-index:2;
+margin:0; color:#fff;
+}
+
+#fp img { padding:0 3; margin:0 3; }
+
+#toplogo { 
+position:absolute; 
+top:20px; 
+right:30px; 
+clear:both; 
+padding:2px; 
+margin:5px; 
+}
+
+#mgmtinfo { 
+position:absolute;
+left:345px; color:#fff;
+top:270px;  
+width:824px; font-size:20px;
+text-align:left;z-index:1;
+}
+
+#mgmtinfo2 { 
+position:absolute;font-size:20px;
+left:px; color:#fff;
+  
+
+text-align:left;z-index:1;
+}
+
+#mapinfo { 
+position:absolute;
+left:0px; 
+top:120px;  
+width:1024px; 
+text-align:center;
+}
+
+#ameninfo { 
+position:absolute; 
+left:20px; 
+top:150px;  
+width:512px; 
+}
+
+
+#mgmt p { font-size:120%; }
+
+#mgmtinfo2 ul li { margin:15 0; }
+
+#amenmap { 
+position:absolute; 
+left:150px; 
+top:160px; 
+}
+
+#amenmap_sub { 
+position:absolute; 
+right:40px; 
+top:180px; 
+}
+
+#ameninfo { 
+position:absolute; 
+top:100px;  
+left:10px; 
+width:400px; 
+}
+
+#ameninfo a { color:#fff; text-decoration:underline; }
+
+#ameninfo p { font-size:110%; margin:40 0; font-color:#fff; }
+
+#buttons { 
+position:absolute; 
+float:left; 
+left:250px; 
+top:190px; 
+padding:0; 
+margin:0; 
+}
+
+#buttonlist { 
+list-style-type:none; 
+padding:0; 
+margin:0; 
+border:0; 
+} 
+
+.textbuttonlist { 
+list-style-type:none; 
+padding:0; 
+margin:0; 
+border:0; 
+}
+
+.textbuttonlist li { 
+margin:8px 0; 
+border:0; 
+text-decoration:none; 
+}
+
+#buttonlist li { 
+display:inline; 
+margin:20px 0; 
+padding:0 100px 10px 0; 
+border:0; 
+text-decoration:none; 
+}
+
+#headshot {
+	float: right;
+	padding-top:10%;
+	height:30%;
+}
+#floormap {
+	width:auto;
+	text-align:center;
+}
+
+#main{color:#fff}
+
+
+
+.amen {
+font-size:18px;
+font-weight:100;
+}
+
+.amenh {
+font-weight:bold;
+text-decoration:underline;
+}
+
+#amenities { 
+position:absolute; 
+top:600px; 
+left:600px; 
+padding:0; 
+margin:0; z-index:2;
+width:650px;
+}
+#alpha-heading {
+	position: absolute;
+	text-align: center;
+	top: 350px;
+	left: 88px;
+	width: 892px;
+	font-family: "Myriad Pro", sans-serif;
+	background: url("../images/buttons/btn7.png") center center no-repeat;
+	background-size: 100% 100%;
+	letter-spacing: 5px;
+	font-size: 42px;
+	font-weight: bold;
+	color: #fff;
+	height: 46px;
+}
+#alpha-heading p:first-child{
+	font-size: 100%;
+	height:100%;
+	/*line-height:46px;*/
+}
+#forward {
+	position: absolute;
+	z-index: 2;
+	top: 1500px;
+	left: 550px;
+	width: 48px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+	text-align: center;
+	border: solid red 0px;
+
+}
+#previous {
+	position: absolute;
+	z-index: 2;
+	top: 1500px;
+	left: 430px;
+	width: 48px;
+	padding: 0;
+	margin: 0;
+	border: solid red 0px;
+	clear: both;
+	text-align: center;
+}

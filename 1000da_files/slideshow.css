@@ -1,0 +1,135 @@
+@charset "utf-8";
+body, html{
+	background:url("../images/pattern.png") repeat;
+	/*background-color: #FFFFCD;*/
+	background-color: #000;
+	/*overflow: hidden;*/
+}
+
+#slideshow-container{
+	position: absolute;
+	top: 292px;
+	left: 0px;
+	width: 1080px;	
+	height: 1314px;
+}
+#slideshow-container.vacancies{
+	position: absolute;
+	top: 460px;
+	left: 0px;
+	width: 1080px;	
+	height: 960px;
+}
+#slideshow-container.gallery{
+	position: absolute;
+	top: 460px;
+	left: 0px;
+	width: 1080px;	
+	height: 960px;
+	
+}
+#slideshow{
+	position: relative;
+	width: 1080px;
+	height: 960px;
+	left: 0px;
+	top: 0px;
+	z-index: 0 !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#slideshow.vacancies{
+	position:relative;
+	top:0;
+	width: 1000px;
+	height: 900px;
+	z-index: 1;
+	display: block;
+	margin: 0 auto;
+}
+#slideshow.gallery{
+	position:relative;
+	top:0;
+	width: 1000px;
+	height: 900px;
+	z-index: 1;
+	display: block;
+	margin: 0 auto;
+}
+#slide-nav{
+	position: relative;
+	/*left:195px;*/
+	/*top:95px;*/
+	display:flex;
+	justify-content: center;
+	flex-direction: row;
+	/*margin: 0 auto;*/
+	margin-top:50px;
+
+}
+#slide-nav div{
+	display: block;
+	height: inherit;
+	float: right;
+}
+#slide-nav #slide-forward{
+}
+#slide-nav #slide-prev{
+	margin: 0 40px 0 0;
+	float: left;
+}
+.cycle-slideshow img{
+	max-height: 100%;
+    max-width: 100%;
+   
+}
+
+#slideshow img {
+
+}
+#slideshow.front .cycle-slideshow img{
+	height: 100%;
+    width: 100%; 
+}
+
+#adv-custom-pager.center{
+	text-align: center; 
+	
+	color: #202F56;
+}
+#adv-custom-pager.external{
+	position: static;
+	font-size: 42px;
+	margin-top:0;
+}
+#adv-custom-pager span{
+	cursor: pointer;
+}
+#adv-custom-pager .cycle-pager-active{
+	color:#fff;
+ 	text-shadow:
+   -1px -1px 0 #202F56,  
+    1px -1px 0 #202F56,
+    -1px 1px 0 #202F56,
+     1px 1px 0 #202F56;
+}
+#slideshow-banner{
+	position: absolute;
+	top:1080px;
+	left:0px;
+}
+
+#slideshow-banner img{
+	max-width: 100%;
+}
+.bg-gradient.gray{
+	background: #323233; /* Old browsers */
+	background: -moz-linear-gradient(top,  #323233 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#323233), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #323233 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #323233 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #323233 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #323233 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323233', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
